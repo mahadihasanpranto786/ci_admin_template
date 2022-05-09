@@ -30,7 +30,7 @@
 		.autoLogin {
 			position: absolute;
 			left: -9px;
-			padding: 10px;
+			padding: 9px;
 			background-color: #13181c;
 			outline: none;
 		}
