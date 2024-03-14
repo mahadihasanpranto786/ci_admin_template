@@ -50,7 +50,7 @@
 				<div class="col-lg-6 col-12 fxt-none-991">
 					<div class="fxt-header">
 						<!-- <div class="fxt-transformY-50 fxt-transition-delay-1">
-                            <a href="#" class="fxt-logo"><img width="128" height="128" src="<?php echo base_url('') ?>assets/uploads/image/logo/logo.png" alt="Logo"></a>
+                            <a href="#" class="fxt-logo"><img width="128" height="128" src="<?php echo base_url('') ?>uploads/image/logo/logo.png" alt="Logo"></a>
                         </div> -->
 						<div class="fxt-transformY-50 fxt-transition-delay-2">
 
@@ -131,4 +131,3 @@
 </body>
 
 </html>
-
