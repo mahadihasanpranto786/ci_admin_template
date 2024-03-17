@@ -1,258 +1,596 @@
-.text_color_th {
-	color: white;
+.nav-treeview .nav-item{
+    margin-left:15px;
 }
-
-.table-tr-border-color {
-	background: #3d9970;
-}
-
-input[type="text"]:disabled {
-	background-color: white;
-}
-textarea[type="text"]:disabled {
-	background-color: white;
-}
-.pending {
-	font-size: 24px;
-	color: red;
-	 
-}
-[class*="sidebar-dark-"] {
-    background-color: #04203c;
-}
-.navbar-white {
-    /* background-color: #c6d8ea; */
+.nav-treeview .nav-item .nav-link {
+    width: calc(250px - .5rem * 4);
+    padding: 4px;
+    font-size: 14px;
 }
 .main-header {
-    border-bottom: 1px solid #5e7d9b;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(4,4,50,1) 64%, rgba(4,12,69,1) 100%);
 }
-.fxt-template-layout3 .fxt-content {
-    padding: 65px 90px 45px;
-    width: 100%;
-    background-color: #00000061;
+.main-sidebar,
+.layout-navbar-fixed .wrapper .sidebar-dark-primary .brand-link:not([class*="navbar"]) {
+    background: rgba(0,0,0,1);
 }
-/* cyrillic-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: italic;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7qsDJT9g.woff2) format('woff2');
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active{
+	background: #ff69b4;
 }
-/* cyrillic */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: italic;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7jsDJT9g.woff2) format('woff2');
-	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+.custom__card--one {
+    background-color: #fff;
+    border-top: 2px solid #001f3f;
+    border-bottom: 2px solid #001f3f;
+    border-radius: 8px;
 }
-/* greek-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: italic;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7rsDJT9g.woff2) format('woff2');
-	unicode-range: U+1F00-1FFF;
+.custom__card--datatable {
+    background-color: #fff;
+    border-top: 2px solid #001f3f;
+    border-bottom: 2px solid #001f3f;
+    border-radius: 8px;
+    padding: 20px 15px;
 }
-/* greek */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: italic;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7ksDJT9g.woff2) format('woff2');
-	unicode-range: U+0370-03FF;
+.custom__card--datatable .page-item.active .page-link {
+    background-color: #001f3f;
+    border-color: #001f3f;
 }
-/* vietnamese */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: italic;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7osDJT9g.woff2) format('woff2');
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: italic;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7psDJT9g.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: italic;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDI.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2) format('woff2');
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2) format('woff2');
-	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2) format('woff2');
-	unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2) format('woff2');
-	unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2) format('woff2');
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
-	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
-	unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
-	unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format('woff2');
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format('woff2');
-	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format('woff2');
-	unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format('woff2');
-	unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format('woff2');
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+.custom__card__px--olive {
+    background-color: #fff;
+    border-top: 2px solid #339966;
+    border-bottom: 2px solid #339966;
+    border-radius: 8px;
 }
 
+/* ===== Card modification ===== */
+/* ===== Background customizations ===== */
+
+/* Solid background colors  */
+
+.bg__hot__pink {
+    background-color: #ff0081;
+    color: #fff;
+}
+
+.bg__dark__blue {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.bg__deep__purple {
+    background-color: #56468b;
+    color: #fff;
+}
+
+.bg__purple {
+    background-color: #800080;
+    color: #fff;
+}
+
+.bg__deep__orange {
+    background-color: #ef5a0b;
+    color: #fff;
+}
+
+.bg__deep__red {
+    background-color: #e21b41;
+    color: #fff;
+}
+
+.bg__deep__primary {
+    background-color: #2421da;
+    color: #fff;
+}
+
+.bg__deep__warning {
+    background-color: #ff6d4d;
+    color: #fff;
+}
+.bg__deep__dark {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Gradient background color   */
+
+.bgg__roseanna {
+    background: rgb(255, 175, 189);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 175, 189, 1) 31%,
+        rgba(255, 195, 160, 1) 100%
+    );
+    color: #000;
+}
+
+.bgg__sexy__blue {
+    background: rgb(33, 147, 176);
+    background: linear-gradient(
+        90deg,
+        rgba(33, 147, 176, 1) 31%,
+        rgba(109, 213, 237, 1) 100%
+    );
+    color: #fff;
+}
+
+.bgg__purple__love {
+    background: rgb(204, 43, 94);
+    background: linear-gradient(
+        90deg,
+        rgba(204, 43, 94, 1) 31%,
+        rgba(117, 58, 136, 1) 100%
+    );
+    color: #fff;
+}
+
+.bgg__piglet {
+    background: rgb(238, 156, 167);
+    background: linear-gradient(
+        90deg,
+        rgba(238, 156, 167, 1) 31%,
+        rgba(255, 221, 225, 1) 100%
+    );
+    color: #000;
+}
+
+.bgg__mauve {
+    background: rgb(66, 39, 90);
+    background: linear-gradient(
+        90deg,
+        rgba(66, 39, 90, 1) 31%,
+        rgba(115, 75, 109, 1) 100%
+    );
+    color: #fff;
+}
+
+.bgg__socialive {
+    background: rgb(6, 190, 182);
+    background: linear-gradient(
+        90deg,
+        rgba(6, 190, 182, 1) 31%,
+        rgba(72, 177, 191, 1) 100%
+    );
+    color: #fff;
+}
+
+.bgg__kashmir {
+    background: rgb(97, 67, 133);
+    background: linear-gradient(
+        90deg,
+        rgba(97, 67, 133, 1) 31%,
+        rgba(81, 99, 149, 1) 100%
+    );
+    color: #fff;
+}
+
+.bgg__frost {
+    background: rgb(0, 4, 40);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 4, 40, 1) 31%,
+        rgba(0, 78, 146, 1) 100%
+    );
+    color: #fff;
+}
+
+.bgg__scooter {
+    background: rgb(54, 209, 220);
+    background: linear-gradient(
+        90deg,
+        rgba(54, 209, 220, 1) 31%,
+        rgba(91, 134, 229, 1) 100%
+    );
+    color: #fff;
+}
+
+.bgg__royal {
+    background: rgb(20, 30, 48);
+    background: linear-gradient(
+        90deg,
+        rgba(20, 30, 48, 1) 31%,
+        rgba(36, 59, 85, 1) 100%
+    );
+    color: #fff;
+}
+
+.bgg__aubergine {
+    background: rgb(170, 7, 107);
+    background: linear-gradient(
+        90deg,
+        rgba(170, 7, 107, 1) 31%,
+        rgba(97, 4, 95, 1) 100%
+    );
+    color: #fff;
+}
+
+.bgg__orange__coral {
+    background: rgb(255, 153, 102);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 153, 102, 1) 31%,
+        rgba(255, 94, 98, 1) 100%
+    );
+    color: #fff;
+}
+/* ===== Background customizations ===== */
+/* ===== AdminLTE button modifications ===== */
+
+/* Static button  */
+.custom__button {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+}
+
+.custom__button__flat {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0rem;
+}
+
+.custom__button__round {
+    display: inline-block;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.custom__group__button .btn {
+    border-radius: 0.5rem;
+}
+
+.custom__group__button .dropdown-menu.show {
+    border-radius: 0.5rem;
+    padding: 3px;
+    background-color: #000;
+}
+
+.custom__group__button .dropdown-menu .dropdown-item {
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.custom__badges {
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+}
+
+.btn__olive {
+    background-color: #339966;
+    color: #fff;
+}
+.btn__olive:hover {
+    background-color: #30916e;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.btn__navy {
+    background-color: #001f3f;
+    color: #fff;
+}
+
+.btn__navy:hover {
+    background-color: #001f3f;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__hot__pink {
+    background-color: #ff0081;
+    color: #fff;
+}
+
+.btn__hot__pink:hover {
+    background-color: #e60074;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__black {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn__black:hover {
+    background-color: #161616;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__dark__blue {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.btn__dark__blue:hover {
+    background-color: #2f4255;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__blue {
+    background-color: #246da7;
+    color: #fff;
+}
+
+.btn__deep__blue:hover {
+    background-color: #206296;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__purple {
+    background-color: #56468b;
+    color: #fff;
+}
+
+.btn__deep__purple:hover {
+    background-color: #4d3f7d;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__purple {
+    background-color: #800080;
+    color: #fff;
+}
+
+.btn__purple:hover {
+    background-color: #730073;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__sky__blue {
+    background-color: #2499ff;
+    color: #fff;
+}
+
+.btn__sky__blue:hover {
+    background-color: #208ae6;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__orange {
+    background-color: #ef5a0b;
+    color: #fff;
+}
+
+.btn__deep__orange:hover {
+    background-color: #d7510a;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__red {
+    background-color: #e21b41;
+    color: #fff;
+}
+
+.btn__deep__red:hover {
+    background-color: #cb183a;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__primary {
+    background-color: #2421da;
+    color: #fff;
+}
+
+.btn__deep__primary:hover {
+    background-color: #201ec4;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__warning {
+    background-color: #ff6d4d;
+    color: #fff;
+}
+
+.btn__deep__warning:hover {
+    background-color: #e66245;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Outlined Flat Buttons  */
+
+.btn__olive__outline {
+    background-color: #fff;
+    color: #339966;
+    font-weight: 400;
+    border: 1px solid #339966;
+}
+
+.btn__olive__outline:hover {
+    background-color: #30916e;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.btn__navy__outline {
+    background-color: #fff;
+    color: #001f3f;
+    font-weight: 400;
+    border: 1px solid #001f3f;
+}
+
+.btn__navy__outline:hover {
+    background-color: #001f3f;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__hot__pink__outline {
+    background-color: #fff;
+    color: #ff0081;
+    font-weight: 400;
+    border: 1px solid #ff0081;
+}
+
+.btn__hot__pink__outline:hover {
+    background-color: #e60074;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__black__outline {
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;
+    border: 1px solid #000;
+}
+
+.btn__black__outline:hover {
+    background-color: #161616;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__dark__blue__outline {
+    background-color: #fff;
+    color: #34495e;
+    font-weight: 400;
+    border: 1px solid #34495e;
+}
+
+.btn__dark__blue__outline:hover {
+    background-color: #2f4255;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__blue__outline {
+    background-color: #fff;
+    color: #246da7;
+    font-weight: 400;
+    border: 1px solid #246da7;
+}
+
+.btn__deep__blue__outline:hover {
+    background-color: #206296;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__purple__outline {
+    background-color: #fff;
+    color: #56468b;
+    font-weight: 400;
+    border: 1px solid #56468b;
+}
+
+.btn__deep__purple__outline:hover {
+    background-color: #4d3f7d;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__purple__outline {
+    background-color: #fff;
+    color: #800080;
+    font-weight: 400;
+    border: 1px solid #800080;
+}
+
+.btn__purple__outline:hover {
+    background-color: #730073;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__sky__blue__outline {
+    background-color: #fff;
+    color: #2499ff;
+    font-weight: 400;
+    border: 1px solid #2499ff;
+}
+
+.btn__sky__blue__outline:hover {
+    background-color: #208ae6;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__orange__outline {
+    background-color: #fff;
+    color: #ef5a0b;
+    font-weight: 400;
+    border: 1px solid #ef5a0b;
+}
+
+.btn__deep__orange__outline:hover {
+    background-color: #d7510a;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__red__outline {
+    background-color: #fff;
+    color: #e21b41;
+    font-weight: 400;
+    border: 1px solid #e21b41;
+}
+
+.btn__deep__red__outline:hover {
+    background-color: #cb183a;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__primary__outline {
+    background-color: #fff;
+    color: #2421da;
+    font-weight: 400;
+    border: 1px solid #2421da;
+}
+
+.btn__deep__primary__outline:hover {
+    background-color: #201ec4;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn__deep__warning__outline {
+    background-color: #fff;
+    color: #ff6d4d;
+    font-weight: 400;
+    border: 1px solid #ff6d4d;
+}
+
+.btn__deep__warning__outline:hover {
+    background-color: #e66245;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
